@@ -1,10 +1,13 @@
 import { Component } from "react";
+import { Spinner, Alert } from "react-bootstrap";
 
 class Preferiti extends Component {
   state = {
     iMieiPreferiti: {
       Search: [],
     },
+    isLoading: true,
+    isError: false,
   };
 
   getMyFavorites = () => {
@@ -20,10 +23,15 @@ class Preferiti extends Component {
         console.log(array);
         this.setState({
           iMieiPreferiti: array,
+          isLoading: false,
         });
       })
       .catch((err) => {
         console.log(err);
+        this.setState({
+          isLoading: false,
+          isError: true,
+        });
       });
   };
   componentDidMount() {
@@ -34,6 +42,18 @@ class Preferiti extends Component {
     return (
       <>
         <h4>Preferiti</h4>
+        {this.state.isLoading && (
+          <div className="text-center">
+            <Spinner animation="border" variant="danger" />
+          </div>
+        )}
+        {this.state.isError && (
+          <div>
+            <Alert variant="danger" className="text-center bg-danger">
+              Errore nel caricamento dei film
+            </Alert>
+          </div>
+        )}
         <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-4 row-cols-xl-6 mb-4">
           {this.state.iMieiPreferiti.Search.map((movie) => {
             return (
