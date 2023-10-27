@@ -10,8 +10,10 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <>
-      <Navbar NetflixLogo={logo} />
       {/* ------------------------------------------------------------------------------------------navbar qui -------------------------------------- */}
+
+      <Navbar NetflixLogo={logo} />
+
       <div className="container-fluid px-4">
         <div className="d-flex justify-content-between">
           <div className="d-flex">

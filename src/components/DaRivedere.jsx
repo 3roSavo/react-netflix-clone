@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import { Component } from "react";
 import { Spinner, Alert } from "react-bootstrap";
 
@@ -63,6 +64,7 @@ class DaRivedere extends Component {
                   src={movie.Poster}
                   alt="movie picture"
                 />
+                <h6 className="text-light">{movie.Title}</h6>
               </div>
             );
           })}

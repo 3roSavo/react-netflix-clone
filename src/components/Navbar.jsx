@@ -48,7 +48,7 @@ const Navbar = (props) => {
             </li>
             <li className="nav-item">
               <a className="nav-link fw-bold" href="#">
-                My List
+                Profile
               </a>
             </li>
           </ul>
