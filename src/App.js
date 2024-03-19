@@ -1,12 +1,10 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import logo from "./assets/logo.png";
-import Preferiti from "./components/Preferiti";
-import DaRivedere from "./components/DaRivedere";
-import Cult from "./components/Cult";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Ricerca from "./components/Ricerca";
+import CaroselloFilm from "./components/CaroselloFilm";
 import { useState } from "react";
 
 function App() {
@@ -68,15 +66,19 @@ function App() {
 
         {/* Qui inserirò le 3 sezioni di film -------------------------------------------------------------------------*/}
 
-        <h4>Risultati ricerca<i className="bi bi-search icons ms-3 fs-4"></i></h4>
         <Ricerca films={searchedFilms} />
 
         <h4>Preferiti</h4>
-        <Preferiti />
+        {/*<Preferiti />*/}
+        <CaroselloFilm urlSearch={"star%20wars"} />
 
-        <DaRivedere />
+        <h4>Da rivedere</h4>
+        {/*<DaRivedere />*/}
+        <CaroselloFilm urlSearch={"lord%20of%20the%20rings"} />
 
-        <Cult />
+        <h4>Cult</h4>
+        {/*<Cult />*/}
+        <CaroselloFilm urlSearch={"back%20to%20the%20future"} />
 
         {/* Qui inserirò il footer ------------------------------------------------------------------------------------*/}
 

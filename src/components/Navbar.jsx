@@ -12,7 +12,7 @@ const Navbar = (props) => {
 
     if (searchBar !== undefined && searchBar !== "") {
 
-      fetch("http://www.omdbapi.com/?apikey=846ed30e&s=" + searchBar, {    // logica trasformazione spazio in %20
+      fetch("http://www.omdbapi.com/?apikey=846ed30e&s=" + searchBar.replace(/ /g, "%20"), {    // logica trasformazione spazio in %20
         method: "GET",
       })
         .then((response) => {
