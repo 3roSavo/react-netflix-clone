@@ -114,7 +114,7 @@ const Footer = () => {
           </div>
           <div className="row">
             <div className="col mb-2 mt-2 copyright">
-              © 1997-2023 Netflix, Inc.
+              © 1997-{new Date().getFullYear()} Netflix, Inc.
             </div>
           </div>
         </div>

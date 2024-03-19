@@ -42,7 +42,7 @@ class Preferiti extends Component {
   render() {
     return (
       <>
-        <h4>Preferiti</h4>
+
         {this.state.isLoading && (
           <div className="text-center">
             <Spinner animation="border" variant="danger" />

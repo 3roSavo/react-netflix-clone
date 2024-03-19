@@ -1,4 +1,38 @@
+import { useState } from "react";
+
 const Navbar = (props) => {
+
+
+  const [visible, setVisible] = useState(false)
+
+  const [searchBar, setSearchBar] = useState("")
+
+  const getFilm = () => {
+
+
+    if (searchBar !== undefined && searchBar !== "") {
+
+      fetch("http://www.omdbapi.com/?apikey=846ed30e&s=" + searchBar, {    // logica trasformazione spazio in %20
+        method: "GET",
+      })
+        .then((response) => {
+          if (response.ok) {
+            return response.json()
+          } else {
+            return response.json()
+              .then(errorData => { throw new Error(errorData.message) })
+          }
+        })
+        .then(data => {
+          props.filmsFunction(data.Search)
+        })
+        .catch(err => alert(err))
+    }
+
+  }
+
+
+
   return (
     <nav
       className="navbar navbar-expand-lg bg-dark"
@@ -53,12 +87,28 @@ const Navbar = (props) => {
             </li>
           </ul>
           <div className="d-flex align-items-center">
-            <i className="bi bi-search icons"></i>
-            <div id="kids" className="fw-bold">
+            {visible &&
+              <form onSubmit={(e) => {
+                e.preventDefault()
+                setVisible(false)
+                getFilm()
+              }}
+                className="">
+                <input type="text"
+                  style={{ maxWidth: "180px" }}
+                  placeholder="Titolo film/serieTV"
+                  value={searchBar}
+                  onChange={(e) => setSearchBar(e.target.value)}
+                >
+                </input>
+              </form>
+            }
+            {!visible && <i className="bi bi-search icons" onClick={() => { setVisible(true) }}></i>}
+            <div id="kids" className="fw-bold icons">
               KIDS
             </div>
-            <i className="bi bi-bell icons"></i>
-            <i className="bi bi-person-circle icons"></i>
+            <i className="bi bi-bell icons mx-2"></i>
+            <i className="bi bi-person-circle icons ms-2 me-3"></i>
           </div>
         </div>
       </div>

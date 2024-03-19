@@ -6,13 +6,24 @@ import DaRivedere from "./components/DaRivedere";
 import Cult from "./components/Cult";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Ricerca from "./components/Ricerca";
+import { useState } from "react";
 
 function App() {
+
+
+  const [searchedFilms, setSearchedFilm] = useState([])
+
+  const setFilmsFunction = (array) => {
+    setSearchedFilm(array)
+  }
+
+
   return (
     <>
       {/* ------------------------------------------------------------------------------------------navbar qui -------------------------------------- */}
 
-      <Navbar NetflixLogo={logo} />
+      <Navbar NetflixLogo={logo} filmsFunction={setFilmsFunction} />
 
       <div className="container-fluid px-4">
         <div className="d-flex justify-content-between">
@@ -57,8 +68,14 @@ function App() {
 
         {/* Qui inserirò le 3 sezioni di film -------------------------------------------------------------------------*/}
 
+        <h4>Risultati ricerca<i className="bi bi-search icons ms-3 fs-4"></i></h4>
+        <Ricerca films={searchedFilms} />
+
+        <h4>Preferiti</h4>
         <Preferiti />
+
         <DaRivedere />
+
         <Cult />
 
         {/* Qui inserirò il footer ------------------------------------------------------------------------------------*/}
