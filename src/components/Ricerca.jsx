@@ -19,7 +19,7 @@ const Ricerca = (props) => {
                                 <div className="col mb-2 text-center px-1" key={movie.imdbID}>
                                     <img
                                         className="img-fluid"
-                                        style={{ cursor: "pointer" }}
+                                        style={{ cursor: "pointer", height: "300px" }}
                                         src={movie.Poster}
                                         alt="movie-cover"
                                     />
