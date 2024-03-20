@@ -35,7 +35,7 @@ const Navbar = (props) => {
 
   return (
     <nav
-      className="navbar navbar-expand-lg bg-dark"
+      className="navbar navbar-expand-lg bg-dark position-fixed w-100 z-3 shadow-lg"
       data-bs-theme="dark"
       style={{ backgroundColor: "#221f1f !important" }}
     >

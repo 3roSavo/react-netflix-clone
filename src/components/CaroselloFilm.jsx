@@ -46,52 +46,18 @@ class CaroselloFilm extends Component {
     };
 
     addAdditionalSlides = () => {
-        let items1 = document.querySelectorAll('.carousel-one .carousel-item')
-        let items2 = document.querySelectorAll('.carousel-two .carousel-item')
-        let items3 = document.querySelectorAll('.carousel-three .carousel-item')
+        let items = document.querySelectorAll(`.carousel-${this.props.number} .carousel-item`)
 
-        //---------------------------------------------------- primo carosello
-        items1.forEach((el) => {
-            let minPerSlide = 6
+        //----------------------------------------------------logica  carosello
+        items.forEach((el) => {
+            let minPerSlide = 8
             // per i vari breakpoint semplicemente nascondo gli elementi superflui con display property in CSS
             // anzichè gestire minPerSlide ad ogni breakpoint
             let next = el.nextElementSibling
             for (var i = 1; i < minPerSlide; i++) {
                 if (!next) {
                     // wrap carousel by using first child
-                    next = items1[0]
-                }
-                let cloneChild = next.cloneNode(true)
-                el.appendChild(cloneChild.children[0])
-                next = next.nextElementSibling
-            }
-        })
-        //----------------------------------------------------- secondo carosello
-        items2.forEach((el) => {
-            let minPerSlide = 6
-            // per i vari breakpoint semplicemente nascondo gli elementi superflui con display property in CSS
-            // anzichè gestire minPerSlide ad ogni breakpoint
-            let next = el.nextElementSibling
-            for (var i = 1; i < minPerSlide; i++) {
-                if (!next) {
-                    // wrap carousel by using first child
-                    next = items2[0]
-                }
-                let cloneChild = next.cloneNode(true)
-                el.appendChild(cloneChild.children[0])
-                next = next.nextElementSibling
-            }
-        })
-        //------------------------------------------------------ terzo carosello
-        items3.forEach((el) => {
-            let minPerSlide = 6
-            // per i vari breakpoint semplicemente nascondo gli elementi superflui con display property in CSS
-            // anzichè gestire minPerSlide ad ogni breakpoint
-            let next = el.nextElementSibling
-            for (var i = 1; i < minPerSlide; i++) {
-                if (!next) {
-                    // wrap carousel by using first child
-                    next = items3[0]
+                    next = items[0]
                 }
                 let cloneChild = next.cloneNode(true)
                 el.appendChild(cloneChild.children[0])
@@ -122,8 +88,8 @@ class CaroselloFilm extends Component {
                             {this.state.iMieiPreferiti.Search.map((item, index) => (
                                 <div className={"carousel-item justify-content-center justify-content-sm-start" + (index === 0 ? " active" : "")} key={index}>
                                     <div className="card bg-transparent px-1 border-0">
-                                        <div className="card-img">
-                                            <img src={item.Poster} className="img-fluid w-100" alt="foto-carosello" />
+                                        <div className="card-img h-100 " >
+                                            <img src={item.Poster} className="bla" alt="foto-carosello" />
                                         </div>
                                     </div>
                                 </div>

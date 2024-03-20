@@ -23,8 +23,8 @@ function App() {
 
       <Navbar NetflixLogo={logo} filmsFunction={setFilmsFunction} />
 
-      <div className="container-fluid px-4">
-        <div className="d-flex justify-content-between">
+      <div className="container-fluid px-4 pt-5">
+        <div className="d-flex justify-content-between mt-5">
           <div className="d-flex">
             <h2 className="mb-4">TV Shows</h2>
             <div className="btn-group" role="group">
@@ -68,15 +68,15 @@ function App() {
 
         <Ricerca films={searchedFilms} />
 
-        <h4>Preferiti</h4>
+        <h3 className="mb-3 text-light">Preferiti</h3>
         {/*<Preferiti />*/}
         <CaroselloFilm urlSearch={"star%20wars"} number={"one"} />
 
-        <h4>Da rivedere</h4>
+        <h3 className="mt-4 mb-3 text-light">Da rivedere</h3>
         {/*<DaRivedere />*/}
         <CaroselloFilm urlSearch={"lord%20of%20the%20rings"} number={"two"} />
 
-        <h4>Cult</h4>
+        <h3 className="mt-4 mb-3 text-light">Cult</h3>
         {/*<Cult />*/}
         <CaroselloFilm urlSearch={"back%20to%20the%20future"} number={"three"} />
 
