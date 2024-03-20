@@ -70,15 +70,15 @@ function App() {
 
         <h4>Preferiti</h4>
         {/*<Preferiti />*/}
-        <CaroselloFilm urlSearch={"star%20wars"} />
+        <CaroselloFilm urlSearch={"star%20wars"} number={"one"} />
 
         <h4>Da rivedere</h4>
         {/*<DaRivedere />*/}
-        <CaroselloFilm urlSearch={"lord%20of%20the%20rings"} />
+        <CaroselloFilm urlSearch={"lord%20of%20the%20rings"} number={"two"} />
 
         <h4>Cult</h4>
         {/*<Cult />*/}
-        <CaroselloFilm urlSearch={"back%20to%20the%20future"} />
+        <CaroselloFilm urlSearch={"back%20to%20the%20future"} number={"three"} />
 
         {/* Qui inserirò il footer ------------------------------------------------------------------------------------*/}
 
