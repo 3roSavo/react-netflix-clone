@@ -117,7 +117,7 @@ class CaroselloFilm extends Component {
                 )}
 
                 {this.state.iMieiPreferiti.Search.length !== 0 && (
-                    <div id={"recipeCarousel-" + this.props.number} className={"carousel slide carousel-" + this.props.number} /*data-bs-ride="carousel" data-bs-interval="10000"*/>
+                    <div id={"recipeCarousel-" + this.props.number} className={"carousel slide carousel-" + this.props.number} data-bs-ride="carousel" data-bs-interval="10000">
                         <div className="carousel-inner" role="listbox">
                             {this.state.iMieiPreferiti.Search.map((item, index) => (
                                 <div className={"carousel-item justify-content-center justify-content-sm-start" + (index === 0 ? " active" : "")} key={index}>
