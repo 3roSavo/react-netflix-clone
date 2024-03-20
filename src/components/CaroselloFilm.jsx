@@ -45,6 +45,7 @@ class CaroselloFilm extends Component {
             });
     };
 
+    // logica per far scorrere un elemento alla volta nel carosello con immagini multiple per slide https://www.codeply.com/p/0CWffz76Q9
     addAdditionalSlides = () => {
         let items = document.querySelectorAll(`.carousel-${this.props.number} .carousel-item`)
 
@@ -56,8 +57,8 @@ class CaroselloFilm extends Component {
             let next = el.nextElementSibling
             for (var i = 1; i < minPerSlide; i++) {
                 if (!next) {
-                    // wrap carousel by using first child
                     next = items[0]
+                    //così facendo il carosello ricomincierà dal primo elemento quando avrà finito le slide
                 }
                 let cloneChild = next.cloneNode(true)
                 el.appendChild(cloneChild.children[0])
