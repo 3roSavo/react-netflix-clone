@@ -99,6 +99,7 @@ const Navbar = (props) => {
                   placeholder="Titolo film/serieTV"
                   value={searchBar}
                   onChange={(e) => setSearchBar(e.target.value)}
+                  autoFocus
                 >
                 </input>
               </form>
