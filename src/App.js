@@ -24,11 +24,11 @@ function App() {
       <Navbar NetflixLogo={logo} filmsFunction={setFilmsFunction} />
 
       <div className="container-fluid px-4 pt-5">
-        <div className="d-flex justify-content-between mt-5">
-          <div className="d-flex">
-            <h2 className="mb-4">TV Shows</h2>
-            <div className="btn-group" role="group">
-              <div className="dropdown ms-4 mt-1">
+        <div className="d-flex flex-wrap justify-content-between align-items-center gap-3   mt-5">
+          <div className="d-flex ">
+            <h2 className="m-0">TV Shows</h2>
+            <div className="btn-group align-items-center " role="group">
+              <div className="dropdown ms-4">
                 <button
                   type="button"
                   className="btn btn-secondary btn-sm dropdown-toggle rounded-0"
@@ -58,7 +58,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div>
+          <div className=" flex-grow-1 text-end">
             <i className="bi bi-grid icons"></i>
             <i className="bi bi-grid-3x3 icons"></i>
           </div>
