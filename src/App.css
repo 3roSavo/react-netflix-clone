@@ -27,6 +27,11 @@ footer {
   color: #838383 !important;
 }
 
+.footer-icon:hover {
+  cursor: pointer;
+  color: aqua !important;
+}
+
 .footer-links {
   font-size: 0.8em !important;
 }
@@ -44,6 +49,12 @@ footer {
 .footer-button {
   color: #838383 !important;
   border-color: #838383 !important;
+}
+
+.footer-button:hover {
+  color: aqua !important;
+  border-color: aqua !important;
+  box-shadow: 3px 3px 6px rgb(20, 20, 20) !important;
 }
 
 .copyright {
@@ -84,13 +95,13 @@ nav button a:hover {
   .carousel-inner .carousel-item-end.active,
   .carousel-inner .carousel-item-next {
     transform: translateX(50%) !important;
-    transition: transform 1s ease !important;
+    transition: transform 0.7s ease !important;
   }
 
   .carousel-inner .carousel-item-start.active,
   .carousel-inner .carousel-item-prev {
     transform: translateX(-50%) !important;
-    transition: transform 1s ease !important;
+    transition: transform 0.7s ease !important;
   }
 
   .carousel-inner .carousel-item>div {
@@ -114,13 +125,13 @@ nav button a:hover {
   .carousel-inner .carousel-item-end.active,
   .carousel-inner .carousel-item-next {
     transform: translateX(33.33%) !important;
-    transition: transform 1s ease !important;
+    transition: transform 0.7s ease !important;
   }
 
   .carousel-inner .carousel-item-start.active,
   .carousel-inner .carousel-item-prev {
     transform: translateX(-33.33%) !important;
-    transition: transform 1s ease !important;
+    transition: transform 0.7s ease !important;
   }
 
   .carousel-inner .carousel-item>div {
@@ -138,13 +149,13 @@ nav button a:hover {
   .carousel-inner .carousel-item-end.active,
   .carousel-inner .carousel-item-next {
     transform: translateX(25%) !important;
-    transition: transform 1s ease !important;
+    transition: transform 0.7s ease !important;
   }
 
   .carousel-inner .carousel-item-start.active,
   .carousel-inner .carousel-item-prev {
     transform: translateX(-25%) !important;
-    transition: transform 1s ease !important;
+    transition: transform 0.7s ease !important;
   }
 
   .carousel-inner .carousel-item>div {
@@ -162,13 +173,13 @@ nav button a:hover {
   .carousel-inner .carousel-item-end.active,
   .carousel-inner .carousel-item-next {
     transform: translateX(20%) !important;
-    transition: transform 1s ease !important;
+    transition: transform 0.7s ease !important;
   }
 
   .carousel-inner .carousel-item-start.active,
   .carousel-inner .carousel-item-prev {
     transform: translateX(-20%) !important;
-    transition: transform 1s ease !important;
+    transition: transform 0.7s ease !important;
   }
 
   .carousel-inner .carousel-item>div {
@@ -187,13 +198,13 @@ nav button a:hover {
   .carousel-inner .carousel-item-end.active,
   .carousel-inner .carousel-item-next {
     transform: translateX(16.66%) !important;
-    transition: transform 1s ease !important;
+    transition: transform 0.7s ease !important;
   }
 
   .carousel-inner .carousel-item-start.active,
   .carousel-inner .carousel-item-prev {
     transform: translateX(-16.66%) !important;
-    transition: transform 1s ease !important;
+    transition: transform 0.7s ease !important;
   }
 
   .carousel-inner .carousel-item>div {
@@ -212,13 +223,13 @@ nav button a:hover {
   .carousel-inner .carousel-item-end.active,
   .carousel-inner .carousel-item-next {
     transform: translateX(12.5%) !important;
-    transition: transform 1s ease !important;
+    transition: transform 0.7s ease !important;
   }
 
   .carousel-inner .carousel-item-start.active,
   .carousel-inner .carousel-item-prev {
     transform: translateX(-12.5%) !important;
-    transition: transform 1s ease !important;
+    transition: transform 0.7s ease !important;
   }
 
   .carousel-inner .carousel-item>div {
@@ -244,6 +255,11 @@ nav button a:hover {
 .carousel-control-next {
   opacity: 100 !important;
   background: linear-gradient(90deg, rgba(33, 31, 31, 0) 0%, rgba(33, 31, 31, 1) 100%) !important;
+}
+
+.pointer:hover {
+  cursor: pointer;
+  color: aqua;
 }
 
 .bla {

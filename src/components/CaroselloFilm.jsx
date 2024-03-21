@@ -88,8 +88,8 @@ class CaroselloFilm extends Component {
                         <div className="carousel-inner" role="listbox">
                             {this.state.iMieiPreferiti.Search.map((item, index) => (
                                 <div className={"carousel-item justify-content-center justify-content-sm-start" + (index === 0 ? " active" : "")} key={index}>
-                                    <div className="card bg-transparent px-1 border-0">
-                                        <div className="card-img h-100 " >
+                                    <div className="bg-transparent px-1 border-0">
+                                        <div className="h-100 w-100" >
                                             <img src={item.Poster} className="bla" alt="foto-carosello" />
                                         </div>
                                     </div>

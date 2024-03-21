@@ -2,38 +2,38 @@ const Footer = () => {
   return (
     <footer>
       <div className="row justify-content-center mt-5">
-        <div className="col col-6">
+        <div className="col-12 col-md-10 col-xl-9">
           <div className="row">
-            <div className="col mb-2">
+            <div className="col-12 mb-2">
               <i className="bi bi-facebook footer-icon me-2"></i>
               <i className="bi bi-instagram footer-icon me-2"></i>
               <i className="bi bi-twitter-x footer-icon me-2"></i>
               <i className="bi bi-youtube footer-icon"></i>
             </div>
           </div>
-          <div className="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg 4">
+          <div className="row row-cols-2 row-cols-sm-3 row-cols-md-4">
             <div className="col">
               <div className="row">
                 <div className="col footer-links">
                   <p>
-                    <a href="#" alt="footer link">
+                    <span className="pointer">
                       Audio and Subtitles
-                    </a>
+                    </span>
                   </p>
                   <p>
-                    <a href="#" alt="footer link">
+                    <span className="pointer">
                       Media Center
-                    </a>
+                    </span>
                   </p>
                   <p>
-                    <a href="#" alt="footer link">
+                    <span className="pointer">
                       Privacy
-                    </a>
+                    </span>
                   </p>
                   <p>
-                    <a href="#" alt="footer link">
+                    <span className="pointer">
                       Contact us
-                    </a>
+                    </span>
                   </p>
                 </div>
               </div>
@@ -42,19 +42,19 @@ const Footer = () => {
               <div className="row">
                 <div className="col footer-links">
                   <p>
-                    <a href="#" alt="footer link">
+                    <span className="pointer">
                       Audio Description
-                    </a>
+                    </span>
                   </p>
                   <p>
-                    <a href="#" alt="footer link">
+                    <span className="pointer">
                       Investor Relations
-                    </a>
+                    </span>
                   </p>
                   <p>
-                    <a href="#" alt="footer link">
+                    <span className="pointer">
                       Legal Notices
-                    </a>
+                    </span>
                   </p>
                 </div>
               </div>
@@ -63,19 +63,19 @@ const Footer = () => {
               <div className="row">
                 <div className="col footer-links">
                   <p>
-                    <a href="#" alt="footer link">
+                    <span className="pointer">
                       Help Center
-                    </a>
+                    </span>
                   </p>
                   <p>
-                    <a href="#" alt="footer link">
+                    <span className="pointer">
                       Jobs
-                    </a>
+                    </span>
                   </p>
                   <p>
-                    <a href="#" alt="footer link">
+                    <span className="pointer">
                       Cookie Preferences
-                    </a>
+                    </span>
                   </p>
                 </div>
               </div>
@@ -84,19 +84,19 @@ const Footer = () => {
               <div className="row">
                 <div className="col footer-links">
                   <p>
-                    <a href="#" alt="footer link">
+                    <span className="pointer">
                       Gift Cards
-                    </a>
+                    </span>
                   </p>
                   <p>
-                    <a href="#" alt="footer link">
+                    <span className="pointer">
                       Terms of Use
-                    </a>
+                    </span>
                   </p>
                   <p>
-                    <a href="#" alt="footer link">
+                    <span className="pointer">
                       Corporate Information
-                    </a>
+                    </span>
                   </p>
                 </div>
               </div>

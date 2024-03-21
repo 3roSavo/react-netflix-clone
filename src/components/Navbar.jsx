@@ -88,13 +88,16 @@ const Navbar = (props) => {
           </ul>
           <div className="d-flex align-items-center">
             {visible &&
-              <form onSubmit={(e) => {
-                e.preventDefault()
-                setVisible(false)
-                getFilm()
-              }}
-                className="">
+              <form
+                className=""
+                onSubmit={(e) => {
+                  e.preventDefault()
+                  setVisible(false)
+                  getFilm()
+                }}
+              >
                 <input type="text"
+                  id="input-search"
                   style={{ maxWidth: "180px" }}
                   placeholder="Titolo film/serieTV"
                   value={searchBar}
